@@ -1,0 +1,23 @@
+[workspace]
+members = [
+    "pokeplat_utils",
+    "sinjoh_nds",
+    "sinjoh_plat",
+]
+resolver = "2"
+
+[workspace.dependencies]
+anyhow = "1.0.97"
+byteorder = "1.5.0"
+cgmath = "0.18.0"
+clap = { version = "4.5.32", features = ["derive"] }
+clap-verbosity-flag = "3.0.2"
+dialoguer = "0.11.0"
+env_logger = "0.11.7"
+fixed = "1.29.0"
+lazy_static = "1.5.0"
+log = "0.4.26"
+rusqlite = "0.34.0"
+shadow-rs = { version = "1.0.1", features = ["metadata"] }
+tabled = "0.18.0"
+thiserror = "2.0.12"

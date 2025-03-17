@@ -1,0 +1,25 @@
+[package]
+name = "pokeplat_utils"
+version = "0.1.0"
+authors = ["Kuruyia <github@kuruyia.net>"]
+build = "build.rs"
+description = "CLI for exploring Pokémon Platinum's data files"
+edition = "2024"
+license = "Apache-2.0"
+repository = "https://github.com/Kuruyia/sinjoh"
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true, features = ["derive"] }
+clap-verbosity-flag = { workspace = true }
+dialoguer = { workspace = true, features = ["completion", "history"] }
+env_logger = { workspace = true }
+log = { workspace = true }
+rusqlite = { workspace = true }
+shadow-rs = { workspace = true, features = ["metadata"] }
+sinjoh_nds = { path = "../sinjoh_nds" }
+sinjoh_plat = { path = "../sinjoh_plat" }
+tabled = { workspace = true }
+
+[build-dependencies]
+shadow-rs = { workspace = true }

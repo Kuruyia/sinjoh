@@ -1,0 +1,16 @@
+[package]
+name = "sinjoh_nds"
+version = "0.1.0"
+authors = ["Kuruyia <github@kuruyia.net>"]
+description = "Data structures for working with the Nintendo DS file formats"
+edition = "2024"
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/Kuruyia/sinjoh"
+
+[dependencies]
+byteorder = { workspace = true }
+cgmath = { workspace = true }
+fixed = { workspace = true }
+log = { workspace = true }
+thiserror = { workspace = true }

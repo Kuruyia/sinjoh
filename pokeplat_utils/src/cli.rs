@@ -5,14 +5,14 @@ use clap_verbosity_flag::{InfoLevel, Verbosity};
 
 use crate::build::{CLAP_LONG_VERSION, PROJECT_NAME};
 
-const AREA_DATA_NARC_REPO_BUILD_PATH: &str = "build/res/prebuilt/fielddata/areadata/area_data.narc";
-const AREA_LIGHT_NARC_REPO_BUILD_PATH: &str = "build/res/prebuilt/data/arealight.narc";
+const AREA_DATA_NARC_REPO_BUILD_PATH: &str = "build/res/field/area_data/area_data.narc";
+const AREA_LIGHT_NARC_REPO_BUILD_PATH: &str = "build/res/field/lighting/lighting.narc";
 const AREA_BUILD_NARC_REPO_BUILD_PATH: &str =
-    "build/res/prebuilt/fielddata/areadata/area_build_model/area_build.narc";
+    "build/res/field/props/model_sets/prop_model_sets.narc";
 const BM_ANIME_LIST_NARC_REPO_BUILD_PATH: &str = "build/res/prebuilt/arc/bm_anime_list.narc";
 const BUILD_MODEL_MATSHP_DAT_REPO_BUILD_PATH: &str =
     "build/res/prebuilt/fielddata/build_model/build_model_matshp.dat";
-const MAP_MATRIX_NARC_REPO_BUILD_PATH: &str = "build/res/field/maps/matrices/map_matrix.narc";
+const MAP_MATRIX_NARC_REPO_BUILD_PATH: &str = "build/res/field/matrices/map_matrix.narc";
 const LAND_DATA_NARC_REPO_BUILD_PATH: &str = "build/res/field/maps/data/land_data.narc";
 
 #[derive(Debug, Parser)]

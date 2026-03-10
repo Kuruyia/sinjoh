@@ -414,7 +414,7 @@ impl NarcReader {
     /// Returns an iterator over the files in the NARC file.
     ///
     /// This will sequentially load each file from the NARC file as needed.
-    pub fn files_iter(&mut self) -> NarcReaderFilesIter {
+    pub fn files_iter(&mut self) -> NarcReaderFilesIter<'_> {
         NarcReaderFilesIter::new(self)
     }
 }

@@ -12,10 +12,10 @@ use crate::plat_loader::PlatResources;
 pub fn export_plat_resources(resources: PlatResources, path: &PathBuf) -> Result<()> {
     let remove_file_res = fs::remove_file(path);
 
-    if let Err(err) = remove_file_res {
-        if err.kind() != io::ErrorKind::NotFound {
-            return Err(err).context("Failed to delete the file at the export path");
-        }
+    if let Err(err) = remove_file_res
+        && err.kind() != io::ErrorKind::NotFound
+    {
+        return Err(err).context("Failed to delete the file at the export path");
     }
 
     let mut conn = Connection::open(path)?;
